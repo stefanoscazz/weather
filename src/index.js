@@ -1,5 +1,4 @@
-import './img/geo.png';
-import './img/search.png';
+
 import './style.css';
 
 /** */
@@ -16,7 +15,6 @@ const vento = document.querySelector('.vento');
 const divVento = document.querySelector('.div_vento');
 const divTemperatura = document.querySelector('.div_temperatura');
 const divImmagine = document.querySelector('.div_immagine');
-
 let dataO = new Date();
 let days = dataO.getDay();
 const divGiorno = document.querySelector('.giorno');
