@@ -109,7 +109,7 @@ input::placeholder {
 }
 /*Responsive*/
 /*Orizzontale*/
-@media only screen and (min-device-width: 374px) and (max-device-width: 812px) and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 812px) and (orientation: portrait) {
   .search {
     width: 100%;
     left: 0;
