@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.bundle.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="search">
+      <input type="text" placeholder="Scrivi la località" />
+      <button class="btn"><img src="/src/img/search.png" alt="" /></button>
+      <button class="geo"><img src="/src/img/geo.png" alt="" /></button>
+    </div>
+    <div class="sezione__1">
+      <div class="logo"><h1>INDRAmeteo</h1></div>
+    </div>
+    <div class="sezione__meteo">
+      <div class="titolo__citta">
+        <h1></h1>
+        <div class="div_giorno"><h3 class="giorno"></h3></div>
+      </div>
+      <div class="meteo">
+        <div class="div_temperatura container">
+          <p>TEMPERATURA</p>
+          <h3 class="temperatura"></h3>
+        </div>
+        <div class="div_immagine container">
+          <img src="" class="img" alt="" />
+          <h3 class="stato"></h3>
+        </div>
+
+        <div class="div_vento container">
+          <p>VENTO</p>
+          <h3 class="vento"></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
