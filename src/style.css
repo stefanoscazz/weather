@@ -119,6 +119,7 @@ input::placeholder {
   }
   .meteo {
     flex-direction: column;
+    height: 100%;
   }
   .container {
     width: 160px;
@@ -133,5 +134,8 @@ input::placeholder {
 @media screen and (min-width: 500px) and (orientation : landscape){
   .meteo {
     flex-direction: row;
+  }
+  .sezione__meteo{
+    height: 100%;
   }
 }
