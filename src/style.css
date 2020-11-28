@@ -126,11 +126,11 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 500px) and (orientation : landscape){
+@media screen and (min-width: 500px) and (max-width: 800px) and (orientation : landscape){
   .meteo {
     flex-direction: row;
   }
-  .sezione__meteo{
-    height: 100%;
-  }
+ .sezione__1{
+   height: 100%;
+ }
 }
