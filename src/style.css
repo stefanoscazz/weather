@@ -109,7 +109,7 @@ input::placeholder {
 }
 /*Responsive*/
 /*Orizzontale*/
-@media only screen and (min-device-width: 300px){
+@media only screen and (min-width: 300px){
   .search {
     width: 100%;
     left: 0;
