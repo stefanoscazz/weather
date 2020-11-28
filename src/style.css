@@ -14,6 +14,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .sezione__1 .logo {
   color: #e8ebeb;
@@ -59,6 +60,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-evenly;
   background: #051f2e;
+  width: 100%;
 }
 .titolo__citta {
   color: #e8ebeb;
