@@ -14,11 +14,10 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 100%
 }
 .sezione__1 .logo {
   color: #e8ebeb;
-  font-size: 40px;
+  font-size: 25px;
 }
 .sezione__1 button {
   background: none;
@@ -60,17 +59,17 @@ input::placeholder {
   align-items: center;
   justify-content: space-evenly;
   background: #051f2e;
-  width: 100%;
 }
 .titolo__citta {
   color: #e8ebeb;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .meteo {
+ height: 100vh;
   display: flex;
   width: 80%;
   align-items: center;
