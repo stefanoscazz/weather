@@ -119,7 +119,6 @@ input::placeholder {
   }
   .meteo {
     flex-direction: column;
-    height: 100%;
   }
   .container {
     width: 160px;
