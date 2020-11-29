@@ -1,6 +1,5 @@
 
-import './style.css';
-
+import './style.css'; 
 /** */
 const input = document.querySelector('input');
 const btn = document.querySelector('.btn');
@@ -33,11 +32,12 @@ btn.addEventListener('click', () => {
 geoBtn.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(geol);
 })
+
 /**ottieni coordinate */
 function geol(position) {
     let lat = position.coords.latitude;
     console.log(lat);
-    let lon = position.coords.longitude;
+    let lon = position.coords.longitude;  
     console.log(lon);
     richiestaJson(lat, lon);
 };
@@ -53,7 +53,7 @@ function richiestaJson(lat, lon) {
 /** Popola elementi sia di geolocalizzazione che tramite input */
 function popolaElementi(data) {
     if (data.cod === "400") {
-        sezMeteo.style.display = 'none'
+        sezMeteo.style.display = 'none';
     } else {
         ScrollReveal().reveal(divImmagine, { delay: 800, duration: 1000, distance: '50px' });
         ScrollReveal().reveal(divVento, { delay: 1200, duration: 1000, distance: '50px' });
@@ -62,7 +62,8 @@ function popolaElementi(data) {
         sezMeteo.style.display = 'flex'
         window.scroll({
             top: 1000,
-            behavior: 'smooth'});
+            behavior: 'smooth'
+        });
         let meteo = data;
         console.log(meteo);
         vento.textContent = meteo.wind.speed + 'Km/h';
@@ -70,7 +71,8 @@ function popolaElementi(data) {
         temperatura.textContent = Math.floor(meteo.main.temp) + '°C';
         imges.src = `https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`;
         stato.textContent = meteo.weather[0].description;
-        divGiorno.textContent = giorni[days];
+        divGiorno.textContent = giorni[days]; 
         input.value = '';
     }
 }
+
