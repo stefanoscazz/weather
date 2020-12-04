@@ -66,12 +66,12 @@ function popolaElementi(data) {
         });
         let meteo = data;
         console.log(meteo);
-        vento.textContent = meteo.wind.speed + 'Km/h';
-        titoloCitta.textContent = meteo.name;
-        temperatura.textContent = Math.floor(meteo.main.temp) + '°C';
+        vento.innerText = meteo.wind.speed + 'Km/h';
+        titoloCitta.innerText = meteo.name;
+        temperatura.innerText = Math.floor(meteo.main.temp) + '°C';
         imges.src = `https://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`;
-        stato.textContent = meteo.weather[0].description;
-        divGiorno.textContent = giorni[days]; 
+        stato.innerText = meteo.weather[0].description;
+        divGiorno.innerText = giorni[days]; 
         input.value = '';
     }
 }
